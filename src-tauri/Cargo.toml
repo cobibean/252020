@@ -1,5 +1,5 @@
 [package]
-name = "twenty-20-focus-timer"
+name = "pomo-20-20"
 version = "0.1.0"
 description = "A Pomodoro timer with 20-20-20 eye break awareness"
 authors = ["you"]

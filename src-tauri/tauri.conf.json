@@ -2,7 +2,7 @@
   "$schema": "../node_modules/@tauri-apps/cli/schema.json",
   "productName": "Pomo 20-20",
   "version": "0.1.0",
-  "identifier": "com.twenty202020.focustimer",
+  "identifier": "com.pomo2020.timer",
   "build": {
     "beforeDevCommand": "npm run dev",
     "beforeBuildCommand": "npm run build",
