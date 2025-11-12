@@ -33,7 +33,7 @@ export function Controls({
       return (
         <button
           onClick={onStart}
-          className="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 focus:ring-offset-slate-900"
+          className="w-full bg-[rgb(var(--accent-primary))] hover:brightness-110 text-white font-semibold py-3 px-6 rounded-lg transition-all focus:outline-none focus:ring-2 focus:ring-[rgb(var(--accent-secondary))] focus:ring-offset-2 focus:ring-offset-[rgb(var(--surface-bg))]"
           aria-label="Start timer"
         >
           Start
@@ -45,7 +45,7 @@ export function Controls({
       return (
         <button
           onClick={onPause}
-          className="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 focus:ring-offset-slate-900"
+          className="w-full bg-[rgb(var(--accent-primary))] hover:brightness-110 text-white font-semibold py-3 px-6 rounded-lg transition-all focus:outline-none focus:ring-2 focus:ring-[rgb(var(--accent-secondary))] focus:ring-offset-2 focus:ring-offset-[rgb(var(--surface-bg))]"
           aria-label="Pause timer"
         >
           Pause
@@ -56,7 +56,7 @@ export function Controls({
     return (
       <button
         onClick={onResume}
-        className="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 focus:ring-offset-slate-900"
+        className="w-full bg-[rgb(var(--accent-primary))] hover:brightness-110 text-white font-semibold py-3 px-6 rounded-lg transition-all focus:outline-none focus:ring-2 focus:ring-[rgb(var(--accent-secondary))] focus:ring-offset-2 focus:ring-offset-[rgb(var(--surface-bg))]"
         aria-label="Resume timer"
       >
         Resume
@@ -82,14 +82,14 @@ export function Controls({
       <div className="flex gap-2">
         <button
           onClick={onSkip}
-          className="flex-1 bg-transparent hover:bg-slate-800 text-slate-300 font-medium py-2 px-4 rounded-lg border border-slate-700 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-600 focus:ring-offset-2 focus:ring-offset-slate-900"
+          className="flex-1 bg-transparent hover:bg-white/5 text-white/80 font-medium py-2 px-4 rounded-lg border border-white/15 transition-colors focus:outline-none focus:ring-2 focus:ring-[rgb(var(--accent-secondary))] focus:ring-offset-2 focus:ring-offset-[rgb(var(--surface-bg))]"
           aria-label="Skip to next phase"
         >
           Skip Phase
         </button>
         <button
           onClick={onReset}
-          className="flex-1 bg-transparent hover:bg-slate-800 text-slate-300 font-medium py-2 px-4 rounded-lg border border-slate-700 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-600 focus:ring-offset-2 focus:ring-offset-slate-900"
+          className="flex-1 bg-transparent hover:bg-white/5 text-white/80 font-medium py-2 px-4 rounded-lg border border-white/15 transition-colors focus:outline-none focus:ring-2 focus:ring-[rgb(var(--accent-secondary))] focus:ring-offset-2 focus:ring-offset-[rgb(var(--surface-bg))]"
           aria-label="Reset timer"
         >
           Reset
@@ -98,11 +98,11 @@ export function Controls({
 
       {/* Status Info */}
       <div className="text-center space-y-1 pt-2">
-        <p className="text-xs text-slate-500">
+        <p className="text-xs text-white/60">
           Next: {getNextPhaseLabel()} ({formatSeconds(nextPhaseDuration)})
         </p>
         {cycleCount > 0 && (
-          <p className="text-xs text-slate-500">Cycle #{cycleCount}</p>
+          <p className="text-xs text-white/60">Cycle #{cycleCount}</p>
         )}
       </div>
     </div>

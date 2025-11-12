@@ -5,7 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        lakers: {
+          purple: '#552583',
+          gold: '#FDB927',
+          black: '#0A0A0B',
+        },
+      },
+    },
   },
   plugins: [],
 }

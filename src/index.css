@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  /* defaults, will be overridden dynamically from background images */
+  --accent-primary: 85 37 131; /* purple */
+  --accent-secondary: 253 185 39; /* gold */
+  --surface-bg: 10 10 11; /* near-black */
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
